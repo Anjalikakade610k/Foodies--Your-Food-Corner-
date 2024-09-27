@@ -14,7 +14,7 @@ import Login from "./components/Login";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Signup from "./components/SignUp";
-import UserContext from "./utils/userContext";
+import UserContext from "./utils/UserContext";
    
 const AppLayout = () => {
     const [userName, setUserName] = useState();
