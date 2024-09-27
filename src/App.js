@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect, useState} from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -14,18 +14,29 @@ import Login from "./components/Login";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Signup from "./components/SignUp";
+import UserContext from "./utils/userContext";
    
 const AppLayout = () => {
-    return(
+    const [userName, setUserName] = useState();
+
+    useEffect(() => {
+      const data = {
+        name: "Anjali Kakade",
+      };
+      setUserName(data.name);
+    });
+  
+    return (
         <Provider store={appStore}>
-        <div className = "app">
-            <Header/>
-            <Outlet/>
-            <Footer/>
-        </div>
+          <UserContext.Provider value={{ loggedInUser: userName }}>
+            <div className="app">
+              <Header />
+              <Outlet />
+            </div>
+          </UserContext.Provider>
         </Provider>
-    )
-}
+      );
+    };
 
 const appRouter = createBrowserRouter([
     {

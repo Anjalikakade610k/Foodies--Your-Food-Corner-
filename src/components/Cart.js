@@ -79,7 +79,7 @@ const Cart = () => {
                   <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="bg-slate-100 font-serif p-6 rounded shadow-lg mx-auto text-center">
                       <h2 className="text-lg font-sans font-bold mb-4">Order placed {"✅"}</h2>
-                      <p className="text-sm">Thanks for ordering from Foodie.co !</p>
+                      <p className="text-sm">Thanks for ordering from Foodies.co !</p>
                       <button
                         className="mt-4 font-serif text-xs bg-black text-white p-2 rounded"
                         onClick={() => {handleCloseModal()}}
