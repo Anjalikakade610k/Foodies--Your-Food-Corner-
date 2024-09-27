@@ -111,7 +111,7 @@ const Body = () => {
               setFilterRestaurant(filteredList);
             }}
           >
-            Top Rated Restaurants!
+            Top Restaurants!
           </button>
         </div>
         <div className="flex justify-between items-center mx-auto shadow-md border-2 px-6 py-1 rounded-full w-[32rem] ml-[3.4rem]">
