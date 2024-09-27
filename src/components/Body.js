@@ -106,7 +106,7 @@ const Body = () => {
             className="bg-gradient-to-l from-orange-400 to-red-400 w-[18rem] hover:text-white font-bold p-2 rounded-full"
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
-                (res) => res.info.avgRating > 4
+                (res) => res.info.avgRating > 4.2
               );
               setFilterRestaurant(filteredList);
             }}
